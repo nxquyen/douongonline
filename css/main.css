@@ -1,0 +1,942 @@
+:root {
+    --background-color:#333 ;/*màu nền cục bộ, là một cái biến*/
+    --white--color: #fff;
+    --black--color: #000;
+    --text--color: #333;/*màu chữ cục bộ*/
+    --header-height:120px;
+    --navbar-height:34px;
+    --header-wi: calc(var(--header-height) - var(--navbar-height));
+    --text-list: 169px;
+}
+
+*{/*khai báo cục bộ các cái có ở css qua file html*/
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html{ /*khai báo kiểu cho file html*/
+    font-size: 62.5%; /*cài mặc định độ lớn nhỏ 1 phần web*/
+    line-height: 1.6rem;/*độ cao chữ*/
+    font-family: 'Roboto', sans-serif;/*lấy từ google font và nghĩa lúc máy có font roboto thì xài roboto không có thì xài chữ mặc định*/
+    box-sizing: border-box; /*để nó kế thừa toàn bộ phần từ cha ở box-sizing intehit trên chỗ **/
+}
+.grid {
+    width: 1240px;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* >= Tablet */
+@media (min-width: 740px) {
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .mtb-0 {
+        display: none;
+    }
+
+    .mtb-1,
+    .mtb-2,
+    .mtb-3,
+    .mtb-4,
+    .mtb-5,
+    .mtb-6,
+    .mtb-7,
+    .mtb-8,
+    .mtb-9,
+    .mtb-10,
+    .mtb-11,
+    .mtb-12 {
+        display: block;
+    }
+
+    .mtb-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .mtb-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .mtb-3 {
+        flex: 0 0 23.5%;
+        max-width: 23.5%;
+    }
+
+    .mtb-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .mtb-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .mtb-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .mtb-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .mtb-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .mtb-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .mtb-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .mtb-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .mtb-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mtb-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .mtb-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .mtb-o-3 {
+        margin-left: 25%;
+    }
+
+    .mtb-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .mtb-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .mtb-o-6 {
+        margin-left: 50%;
+    }
+
+    .mtb-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .mtb-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .mtb-o-9 {
+        margin-left: 75%;
+    }
+
+    .mtb-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .mtb-o-11 {
+        margin-left: 91.66667%;
+    }
+
+}
+
+/* PC medium resolution > */
+@media (min-width: 1024px) {
+    .wide {
+        width: 1024px;
+    }
+    .max-width-be{
+        width: 1024px;
+    }
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .row.smtb-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .row.smtb-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .tivi-0 {
+        display: none;
+    }
+
+    .tivi-1,
+    .tivi-2,
+    .tivi-2-4,
+    .tivi-3,
+    .tivi-4,
+    .tivi-5,
+    .tivi-6,
+    .tivi-7,
+    .tivi-8,
+    .tivi-9,
+    .tivi-10,
+    .tivi-11,
+    .tivi-12 {
+        display: block;
+    }
+
+    .tivi-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .tivi-2 {
+        flex: 0 0 16.46667%;
+        max-width: 16.46667%;
+    }
+    .tivi-2-1 {
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+
+    .tivi-2-4 {
+        flex: 0 0 18.5%;
+        max-width: 18.5%;
+    }
+    .tivi-2-4-r {
+        flex: 0 0 23%;
+        max-width: 23%;
+    }
+    .tivi-3 {
+        flex: 0 0 24.8%;
+        max-width: 24.8%;
+    }
+
+    .tivi-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .tivi-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .tivi-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .tivi-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .tivi-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .tivi-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .tivi-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .tivi-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .tivi-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .tivi-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .tivi-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .tivi-o-3 {
+        margin-left: 25%;
+    }
+
+    .tivi-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .tivi-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .tivi-o-6 {
+        margin-left: 50%;
+    }
+
+    .tivi-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .tivi-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .tivi-o-9 {
+        margin-left: 75%;
+    }
+
+    .tivi-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .tivi-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+
+
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+    .max-width-be{
+        width: 984px;
+    }
+
+    .wide .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .wide .row.smtb-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .wide .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .wide .row.smtb-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .wide .tivi-0 {
+        display: none;
+    }
+
+    .wide .tivi-1,
+    .wide .tivi-2,
+    .wide .tivi-2-4,
+    .wide .tivi-3,
+    .wide .tivi-4,
+    .wide .tivi-5,
+    .wide .tivi-6,
+    .wide .tivi-7,
+    .wide .tivi-8,
+    .wide .tivi-9,
+    .wide .tivi-10,
+    .wide .tivi-11,
+    .wide .tivi-12 {
+        display: block;
+    }
+
+    .wide .tivi-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .wide .tivi-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .wide .tivi-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .wide .tivi-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .wide .tivi-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .wide .tivi-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .wide .tivi-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .wide .tivi-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .wide .tivi-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .wide .tivi-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .wide .tivi-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .wide .tivi-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .wide .tivi-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .wide .tivi-o-1 {
+        margin-left: 8.33333%;
+    }
+
+    .wide .tivi-o-2 {
+        margin-left: 16.66667%;
+    }
+
+    .wide .tivi-o-3 {
+        margin-left: 25%;
+    }
+
+    .wide .tivi-o-4 {
+        margin-left: 33.33333%;
+    }
+
+    .wide .tivi-o-5 {
+        margin-left: 41.66667%;
+    }
+
+    .wide .tivi-o-6 {
+        margin-left: 50%;
+    }
+
+    .wide .tivi-o-7 {
+        margin-left: 58.33333%;
+    }
+
+    .wide .tivi-o-8 {
+        margin-left: 66.66667%;
+    }
+
+    .wide .tivi-o-9 {
+        margin-left: 75%;
+    }
+
+    .wide .tivi-o-10 {
+        margin-left: 83.33333%;
+    }
+
+    .wide .tivi-o-11 {
+        margin-left: 91.66667%;
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 739px) {
+    .dt-0 {
+        display: none;
+    }
+    
+    .dt-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    
+    .dt-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    
+    .dt-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+    .dt-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    
+    .dt-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    
+    .dt-6 {
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+    
+    .dt-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    
+    .dt-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    
+    .dt-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    
+    .dt-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    
+    .dt-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    
+    .dt-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .icon-facebook
+    {
+        display:none;
+    }
+    .icon-instagram
+    {
+        display:none;
+    }
+    .icon-bell
+    {
+        display:none;
+    }
+    .icon-help{
+        display:none;
+    }
+    .logo{
+        display:none;
+    }
+    .tool-search{
+        padding:0px !important;
+    }
+    .last-block{
+        padding: 5px 3% 0px 7% !important;
+    }
+    .login-space::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 10px !important;
+        background-color: rgb(110 110 110);
+        right:38% !important;
+        top: 50%;
+        transform: translateY(-56%)
+    }
+    .item-menu{
+        padding: 7px 10px !important;
+        font-size: 1rem !important;
+    }
+    .login-button{
+        font-size: 1.1rem !important;
+    }
+    .creat-button{
+        font-size: 1.1rem !important;
+    }
+    .item-app{
+        font-size: 1.1rem;
+    }
+    .item-header{
+        font-size: 1.1rem;
+    }
+    .input-search{
+        padding:9px 10px !important;
+        border-bottom-left-radius: 3px !important;
+        border-top-left-radius: 3px !important;
+        font-size: 1.1rem !important;
+    }
+    .button-search{
+        border-bottom-right-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        padding: 7px 9px !important;
+    }
+    .list-book:hover{
+        color:aqua;
+        padding-left: 4px !important;
+    }
+    .list-book{
+        color: rgb(56, 56, 56);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 20px;
+        font-size: 1rem !important;
+    }
+    .car-list-product-buy{
+        position: absolute !important;
+        width: 250px !important;
+        height: 400px !important;
+        background-color: #fff ;
+        right: 7% !important;
+        z-index: 1 !important;
+        top: 125% !important;
+        display: none;
+        box-shadow: 0 1px 10px 0 #777 !important;
+    }
+    .price-product-car{
+        display: none;
+    }
+    .item-product-car {
+        width: 250px;
+    }
+    .car-show-product{
+        width: 250px !important;
+        height: 340px !important;
+        overflow-y: auto !important;
+        margin-bottom: 2px !important;
+    }
+    .watch-car-product{
+        color: #fff;
+        background-image: linear-gradient(0,rgb(255 79 0),rgb(0 137 255));
+        text-decoration: none;
+        margin-left: 62%;
+        font-size: 1.1rem !important;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .header-notification{
+        position: absolute;
+        width: 400px !important;
+        top: 150%;
+        right: 0;
+        border: 1px solid rgb(161, 138, 138);
+        background-color: rgb(255, 255, 255);
+        display: none;
+        z-index: 3;
+    }
+    .item-right{
+        display: none !important;
+    }
+    .footer-cskh1{
+        display: none;
+    }
+    .pay-list{
+        margin: auto !important;
+    }
+    .item-menu{
+        min-width: 0px !important;
+        padding: 4px 7px !important;
+        font-size: 1rem !important;
+        text-transform: uppercase;
+        font-weight: 600 !important;
+    }
+    .list-menu{
+        padding-left: 40px !important;
+    }
+    .menu-web{
+        font-size: 1rem !important;
+    }
+    .support-web{
+        font-size: 1rem !important;
+    }
+    .card-pay{
+        width: 50%;
+    }
+    .title-text {
+        margin: 10px 0px !important;
+    }
+    .list-drink{
+        font-size: 1rem !important;
+    }
+    .name-product-name{
+        font-size: 1.2rem !important;
+    }
+    .price-product-sales{
+        padding: 5px 5px !important;
+        margin-top: 5px !important;
+    }
+    .product-price-old{
+        font-size: 1.2rem !important;
+    }
+    .vnd11{
+        font-size: 1rem !important;
+        margin-right: 25px !important;
+    }
+    .vnd22{
+        font-size: 1rem !important;
+        margin-right: 25px !important;
+    }
+    .product-price-new{
+        font-size: 1.2rem !important;
+    }
+    .product-price-sales{
+        font-size: 1.2rem !important;
+    }
+    .transport{
+        padding: 5px 5px !important;
+        margin-top: 5px !important;
+    }
+    .transport-name{
+        font-size: 1.2rem !important;
+    }
+    .transport-type{
+        font-size: 1.2rem !important;
+    }
+    .transport-address{
+        font-size: 1.2rem !important;
+    }
+    .transport-price{
+        font-size: 1.2rem !important;
+    }
+    .size-product{
+        padding: 5px 5px !important;
+    }
+    .title-size{
+        font-size: 1.2rem !important;
+    }
+    .size-pr{
+        font-size: 1.2rem !important;
+        padding: 4px 5px !important;
+    }
+    .number-product-buy{
+        padding: 5px 5px !important;
+    }
+    .number-product-name{
+        font-size: 1.2rem !important;
+    }
+    .product-buy-reduce{
+        width: 15px !important;
+        height: 15px !important;
+        font-size: 1.2rem !important;
+        cursor: pointer !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .number-product-wantbuy{
+        width: 15px !important;
+        height: 15px !important;
+        text-align: center !important;
+        font-size: 1rem;
+    }
+    .product-buy-rise{
+        width: 15px !important;
+        height: 15px !important;
+        font-size: 1.2rem !important;
+        cursor: pointer !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .add-product-car{
+        font-size: 1.2rem !important;
+    }
+    .buy-product-car{
+        margin-right: 0px !important;
+    }
+    .category1{
+        margin-left: 0px ;
+        margin: auto !important;
+    }
+    .thongtinsanphamall{
+        margin: auto !important;
+    }
+    .describe-product{
+        margin: auto !important;
+    }
+    .describe-product1{
+        margin: auto !important;
+    }
+}
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .icon-facebook
+    {
+        display:none;
+    }
+    .icon-instagram
+    {
+        display:none;
+    }
+    .logo{
+        width:20% !important;
+    }
+    .tool-search{
+        padding:0px !important;
+    }
+    .login-button{
+        font-size: 1.1rem !important;
+    }
+    .creat-button{
+        font-size: 1.1rem !important;
+    }
+    .item-app{
+        font-size: 1.3rem;
+    }
+    .item-header{
+        font-size: 1.3rem;
+    }
+    .login-space::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 10px !important;
+        background-color: rgb(110 110 110);
+        right:23.3% !important;
+        top: 50%;
+        transform: translateY(-56%)
+    }
+    .icon-bell
+    {
+        font-size: 1.2rem;
+    }
+    .icon-help{
+        font-size: 1.2rem;
+    }
+    .input-search{
+        padding:11px 10px !important;
+        border-bottom-left-radius: 3px !important;
+        border-top-left-radius: 3px !important;
+        font-size: 1.2rem !important;
+    }
+    .button-search{
+        border-bottom-right-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+    }
+    .last-block{
+        padding: 5px 3% 0px 7% !important;
+    }
+    .list-book{
+        color: rgb(56, 56, 56);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 20px;
+        font-size: 1.2rem !important;
+    }
+    .header-notification{
+        position: absolute;
+        width: 400px !important;
+        top: 150%;
+        right: 0;
+        border: 1px solid rgb(161, 138, 138);
+        background-color: rgb(255, 255, 255);
+        display: none;
+        z-index: 3;
+    }
+    .notification-list {
+        padding-left: 0;
+        margin-top: 0px;
+        width: 400px !important;
+        height: 250px !important;
+        overflow-y: auto;
+    }
+    .header-notification-bell {
+        width: 399px !important;
+        background-color: rgb(218 251 69 / 39%);
+        border: 1px solid rgb(226, 224, 224);
+        cursor: default;
+        padding: 2px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .item-menu{
+        min-width: 0px !important;
+        padding: 5px 24px !important;
+    }
+    .product-home{
+        display: block !important;
+    }
+    .item-menu{
+        min-width: 0px !important;
+        padding: 4px 7px !important;
+        font-size: 1.4rem !important;
+        text-transform: uppercase;
+        font-weight: 600 !important;
+    }
+}

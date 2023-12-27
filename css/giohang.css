@@ -1,0 +1,317 @@
+.giohang{
+width: 100%;
+background-color:rgb(255, 255, 255) ;
+padding: 20px;
+}
+/* thẻ làm nền  */
+
+.mua{
+font-size: 1.8rem;
+margin-bottom: 20px;
+/* làm to chữ  */
+}
+
+.block-card{
+display:flex
+}
+
+.form-card{
+width: 70%;
+}
+
+.title-giohang{
+padding: 10px 0px;
+background-color: rgb(139, 201, 255);
+display: flex;
+justify-content: space-between;
+padding-left: 15px ;
+/* căn trái phải */
+padding-right: 15px;
+margin-bottom: 20px ;
+border-radius: 4px;
+}
+
+.all-title{
+    font-size: 15px;
+    width: 35%;
+}
+
+.cost-one-pr{
+    font-size: 15px;
+    width: 15%;
+}
+
+.number-pr{
+    font-size: 15px;
+    width: 30%;
+}
+
+.all-money-cost-all-pr{
+    font-size: 15px;
+    width: 20%;
+}
+
+
+
+.bgspgiohang{
+    background-color: rgb(217, 237, 255);
+    border-radius: 4px;
+}
+
+.quyen{
+padding-left: 15px;
+padding-top: 15px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+background-color: rgb(139, 201, 255);
+font-size: 1.6rem;
+padding-bottom: 15px;
+}
+
+.sachda2{
+display: flex;
+justify-content: space-between;
+padding-right: 650px;
+padding-left: 15px;
+padding-bottom: 20px;
+
+}
+
+.sachda3{
+
+}
+
+.bgsp{
+display: flex;
+justify-content: space-between;
+background-color:#fff;
+padding-bottom: 10px;
+padding-top: 10px;
+border-bottom: 1px solid #000;
+}
+
+.sachda5{
+display: flex;
+
+}
+.img-pr-buy{
+    width: 50px;
+    height: 50px;
+    transition: transform .9s;
+}
+.img-pr-buy:hover{
+    object-fit: cover;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.tt-name-pr-buy{
+    font-size: 1.6rem;
+    padding: 7%;
+}
+.all-pr-cost{
+    font-size: 1.6rem;
+    padding: 15%;
+}
+.tien2{
+padding-top: 25px;
+font-size: 15px;
+}
+.all-money-pr{
+    font-size: 1.6rem;
+}
+.btn-del-sp{
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+.btn-del-sp:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.giamgia{
+background-color: #ffffff;
+width: 30%;
+margin-left: 15px;
+
+
+}
+.gg{
+ background-color:#b1ff97;
+ font-size: 15px;
+ margin-bottom: 15px;
+ border-radius: 4px;
+ padding-left: 15px;
+}
+
+.uuu{
+    justify-content:space-between;
+    display: flex;
+}
+
+.mmm{
+   padding-bottom: 15px; 
+}
+.kkk{
+   width: 200px;
+   padding-bottom: 15px;
+   padding-top: 15px;
+    font-weight: 600;
+}
+
+.hhh{
+padding-right: 15px;
+padding-top: 15px;
+padding-bottom: 20px;
+font-weight: 300;
+}
+
+.ss{
+margin-bottom: 10px;
+font-size: 15px;
+border-radius: 4px;
+
+}
+
+.lll{
+padding-left: 15px;
+padding-top: 6px;
+font-weight: 600;
+}
+
+.ddd{
+padding-top: 10px;
+padding-left: 15px;
+font-weight: 600;
+}
+
+.all-price{
+    padding-right: 15px;
+    padding-top: 6px;
+}
+.img-product-spbuy{
+    width: 5%;
+
+}
+.name-product-spbuy{
+    width: 30%;
+
+}
+.cost-product-spbuy{
+    width: 15%;
+
+}
+.number-product-spbuy{
+    width: 30%;
+
+}
+.all-money-product-spbuy{
+    width: 15%;
+    padding: 2.5%;
+    padding-left: 0;
+}
+.del-product-spbuy{
+    width: 5%;
+    padding: 2%;
+}
+.xxx{
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.ttt{
+display: flex;
+/* lên cùng 1 hàng */
+justify-content: space-between;
+/* chia đều ra 2 bên */
+background-color: #b1ff97;
+margin-bottom: 100px;
+font-size: 15px;
+padding-bottom: 20px;
+margin-top: 15px;
+border-radius: 4px;
+
+}
+
+.all-cost{
+padding-left: 15px;
+padding-top: 20px;
+font-weight: 600;
+}
+
+.title-choose-pr{
+color: red;
+padding-right: 15px;
+padding-top: 20px;
+font-weight: 600;
+}
+
+.bg-btn-buysp{
+    width: 100%;
+}
+
+.fff{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b1ff97;
+    border-radius: 4px;
+
+}
+
+.buy-pr{
+    width: 70%;
+    background-color: rgb(255, 35, 35);
+    border-radius: 4px;
+    margin-left: 65px;
+    height: 50px;
+    color: azure;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.buy-pr:hover{
+    background-color: rgb(0, 255, 21);
+    cursor: pointer;
+}
+.iii{
+ font-size: 15px;   
+}
+.number-product-buy1{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.number-product-name1{
+    font-size: 1.6rem;
+    margin-right: 5px;
+}
+.number-product-buy-describe1{
+    display: flex;
+
+}
+.product-buy-reduce1{
+    width: 25px;
+    height: 25px;
+    /* chieu cao */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.number-product-wantbuy1{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+.product-buy-rise1{
+    width: 25px;
+    height: 25px;
+    font-size: 1.5rem;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.tru1{
+    padding-top: 3px;
+}
+.cong1{
+    padding-bottom: 3px;
+}
+

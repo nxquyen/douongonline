@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main/fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jsweb.js"></script>
+</head>
+
+<body>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> nxquyen@gmail.com</li>
+                                <li>Cửa Hàng Bán Đồ Uống Online</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <p class="login-button" id="show-login" onclick="hide_login()" ><i class="fa fa-user"></i> Đăng Nhập</p>
+                            </div>
+                            <div class="background-hide" id="hide-show-login">
+                                <div class="background-login">
+                                    <div class="title-out">
+                                        <p class="login-dn">đăng nhập</p>
+                                        <button class="login-out" id="hide-login" onclick="hide_login()">
+                                            <i class="fa-solid fa-xmark login-out1"></i>
+                                        </button>
+                                    </div>
+                                    <div class="login-tk">
+                                        <input type="text" class="name-login login-both" placeholder="Nhập email hoặc số điện thoại">
+                                        <input type="text" class="password-login login-both" placeholder="Nhập mật khẩu">
+                                    </div>
+                                    <button type = "button" class=" btn-login" onclick="alert('dang nhap thanh cong')" >đăng nhập</button>
+                                    <div class="forget-password">
+                                        <a class="forgetpass" id="forgetacc" onclick="quenacc()">Quên mật khẩu?</a>
+                                        <a class="noacc" id="creatacc" onclick="taoacc()">Tạo tài khoản</a>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="background-hide" id="hide-show-signup">
+                                <div class="background-signin">
+                                    <div class="title-out">
+                                        <p class="signin-dn" >đăng Ký</p>
+                                        <button class="signin-out" id="hide-signin" onclick="hide_signup()">
+                                            <i class="fa-solid fa-xmark signin-out1"></i>
+                                        </button>
+                                    </div>
+                                    <div class="signin-tk">
+                                        <input type="text" class="name-signin signin-both" placeholder="Nhập email hoặc số điện thoại">
+                                        <input type="text" class="password-signin signin-both" placeholder="Nhập mật khẩu">
+                                        <input type="text" class="password-signin signin-both" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                    <button type = "button" class=" btn-signin" onclick="alert('dang ki thanh cong')">đăng ký</button>
+                                    <div class="forget-password">
+                                        <p>Đã có tài khoản?</p>
+                                        <a  class="noacc" id="loginacc" onclick="dnacc()">Đăng Nhập</a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="background-hide" id="hide-show-forget">
+                                <div class="background-forget">
+                                    <div class="title-out">
+                                        <p class="login-dn">Quên mật khẩu</p>
+                                        <button class="login-out" id="hide-forget" onclick="hide_forget()">
+                                            <i class="fa-solid fa-xmark login-out1"></i>
+                                        </button>
+                                    </div>
+                                    <div class="forget-tk">
+                                        <input type="text" class="name-login login-both" placeholder="Nhập email hoặc số điện thoại">
+                                    </div>
+                                    <button type = "button" class=" btn-forget" onclick="login1()">Nhận mã</button>
+                                    <div class="forget-password">
+                                        <a  class="forgetpass" id="haveacc" onclick="coacc()">Đã có tài khoản?</a>
+                                        <a class="noacc" id="creatacc1" onclick="taoacc1()">Tạo tài khoản</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Trang Chủ</a></li>
+                            <li><a href="#">Danh Mục</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Trà</a></li>
+                                    <li><a href="./shop-details.html">Nước Ngọt</a></li>
+                                    <li><a href="./shop-details.html">Nước Đóng Chai</a></li>
+                                    <li><a href="./shop-details.html">Nước Ép</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="./shoping-cart.html"><i class="fa-solid fa-cart-shopping"></i> <span>3</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Các Loại Sản Phẩm</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Nước Ngọt</a></li>
+                            <li><a href="#">Trà Sữa</a></li>
+                            <li><a href="#">Trà</a></li>
+                            <li><a href="#">Cà Phê</a></li>
+                            <li><a href="#">Nước Ngọt</a></li>
+                            <li><a href="#">Đồ Uống Lạnh</a></li>
+                            <li><a href="#">Đồ Uống Nóng</a></li>
+                            <li><a href="#">Nước Ép</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <input type="text" placeholder="Nhập tên sản phẩm muốn tìm?">
+                                <button type="submit" class="site-btn">Tìm Kiếm</button>
+                            </form>
+                        </div>
+                    </div>
+                    <h4 class="title-fo-listsp">Sản Phẩm Bán Chạy</h4>
+                    <div class="row featured__filter">
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                            <div class="featured__item">
+                                <a href="./shop-details.html" class="featured__item__pic ">
+                                    <img class="img-product-tc" src="img/product/dsfsdfdsf.jpg"></td>
+                                </a>
+                                <div class="featured__item__text">
+                                    <h6><a href="./shop-details.html">Cocacola</a></h6>
+                                    <h5>20.000 VNĐ</h5>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class="product__pagination">
+                        <a href="#"><i class="fa fa-long-arrow-left"></i></a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Product Section Begin -->
+    <!-- Latest Product Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa Chỉ: 35 Nguyễn Sinh Sắc</li>
+                            <li>Phone: 086.284.0765</li>
+                            <li>Email: nxquyen@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Danh Mục Sản Phẩm</h6>
+                        <ul>
+                            <li><a href="#">Nước Ngọt</a></li>
+                            <li><a href="#">Trà Sữa</a></li>
+                            <li><a href="#">Trà</a></li>
+                            <li><a href="#">Cà Phê</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Nước Ngọt</a></li>
+                            <li><a href="#">Đồ Uống Lạnh</a></li>
+                            <li><a href="#">Đồ Uống Nóng</a></li>
+                            <li><a href="#">Nước Ép</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Liên Kết</h6>
+                        <ul>
+                            <li><a href="#">Trang Chủ</a></li>
+                            <li><a href="#">Sản Phẩm</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">FaceBook <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#">Instagram <i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#">Twitter <i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Crafted with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.facebook.com/profile.php?id=100024232537367" target="_blank">Nguyễn Xuân Quyến</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
